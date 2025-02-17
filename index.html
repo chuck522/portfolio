@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Editor Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 2rem yauto;
+      padding: 0 1rem;
+    }
+    .about, .past-works {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    .about h2, .past-works h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    .about p, .past-works p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.8;
+    }
+    .past-works ul {
+      list-style: none;
+      padding: 0;
+    }
+    .past-works li {
+      background: #f9f9f9;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .past-works li h3 {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+    .past-works li p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .video-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .video-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .video-card iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+    }
+    .video-card .content {
+      padding: 1rem;
+    }
+    .video-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .video-card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: #333;
+      color: #fff;
+      margin-top: 2rem;
+    }
+    footer p {
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .video-card iframe {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Video Editor Portfolio</h1>
+    <p>Welcome to my video editing showcase!</p>
+  </header>
+
+  <div class="container">
+    <!-- About Me Section -->
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm a passionate video editor with [8 years] of experience in creating engaging and visually stunning content. 
+        I specialize in post-production, color grading, and storytelling through video. 
+        My goal is to bring ideas to life and connect with audiences through my work. 
+        Feel free to explore my portfolio and get in touch if you'd like to collaborate!
+      </p>
+    </section>
+
+    <!-- Video Portfolio Section -->
+    <div class="grid">
+      <!-- Video 1 -->
+      <div class="video-card">
+        <iframe width="1654" height="940" src="https://www.youtube.com/embed/KYCJr9JpEoE" title="ViuTV 原創劇《野人老師》預告首發！10月3日 起 星期一至五晚 9:30 開學！" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="content">
+          <h3>ViuTV 原創劇《野人老師》</h3>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="video-card">
+       <iframe width="1654" height="940" src="https://www.youtube.com/embed/84uCzPlvR4M" title="【 鍾慧冰「心」事大公開 ！】  心口作痛是心臟病嗎？選擇適合自己心臟檢查，切勿錯過通波仔黃金治療時間" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="content">
+          <h3>香港亞洲心臟中心</h3>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="video-card">
+        <iframe width="1654" height="940" src="https://www.youtube.com/embed/aYCIlgbd1ag" title="《準時開飯》全新陣容！有得煮有得食！ 野外開餐！廚藝level up！" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="content">
+          <h3>ViuTV 準時開飯</h3>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Past Works Section -->
+    <section class="past-works">
+      <h2>Past Works</h2>
+      <ul>
+        <li>
+        </p></p>
+<p>2024 
+今天只做1件事
+香港亞洲心臟中心
+少年談未來</p>
+</p>2023
+準時開飯
+嘉嘉醫療自助班
+再出發吧！山手線</p>
+</p>2022
+野人老師
+聲控鬥室
+奇異集</p>
+</p>2021
+欺詐劇團
+台灣乜都拜
+太平紋身店</p>
+</p>2020
+美少女日本民宿</p>
+</p>2019
+詭探前傳
+明日世遺</p>
+</p>2018
+新世紀潮爆老友
+手作人</p>
+</p>2017
+Youth有機生活
+藝術進行中 2
+豆釘去旅行 </p>
+        </li>
+  
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 chandler SIN. Built with ❤️. <a href="mailto:chucksin522@gmail.com">Contact Me</a></p>
+  </footer>
+</body>
+</html>
